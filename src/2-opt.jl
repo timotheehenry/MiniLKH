@@ -96,7 +96,7 @@ function LS_2_Opt(tour, distmat)
 
                 gainExpected = Gain_From_2_Opt(distmat, X1, X2, Y1, Y2)
 
-                if gainExpected > bestMove.gain
+                if gainExpected > 0
                     # this move will shorten the tour, apply it at once
                     Make_2_Opt_Move(tour, i=i, j=j)
                     print("Tour shortened by $gainExpected \n")
