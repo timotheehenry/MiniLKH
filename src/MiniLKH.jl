@@ -2,6 +2,7 @@ module MiniLKH
 
 include("nearest_neighbor.jl")
 include("2-opt.jl")
+include("3-opt.jl")
 
 
 export tour_cost, nearest_neighbor, LS_2_Opt
@@ -26,6 +27,18 @@ end
 function shift_1(N, idx)
     if idx != N-1
         return (idx+1) % N
+    else
+        return N
+    end
+end
+
+# ============================
+# function to shift by n an index in range(1:N)
+# shift_n.(N, 2, collect(1:N)) = 2,..,N,1
+# ============================
+function shift_n(N, n, idx)
+    if (idx+n) % N != 0
+        return (idx+n) % N
     else
         return N
     end
