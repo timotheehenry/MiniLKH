@@ -2,7 +2,6 @@ module MiniLKH
 
 include("nearest_neighbor.jl")
 include("2-opt.jl")
-include("3-opt.jl")
 
 
 export tour_cost, nearest_neighbor, LS_2_Opt
