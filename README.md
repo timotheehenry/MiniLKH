@@ -8,8 +8,7 @@ My goal is to have a pure Julia implementation, and be close to the LKH results 
 ## Installation
 
 ```jl
-]
-add https://github.com/timotheehenry/MiniLKH.git
+pkg> add https://github.com/timotheehenry/MiniLKH.git
 ```
 
 ## Usage
