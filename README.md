@@ -2,8 +2,14 @@
 
 MiniLKH is a barebone implementation of the LKH library for solving TSP (Traveling Salesman Problem).
 
+The code is mostly a port from Nim to Julia from the code available here:
+
+http://tsp-basics.blogspot.com/
+
 It does not implement all features of the LKH library.
+
 My goal is to have a pure Julia implementation, and be close to the LKH results with the least lines of codes.
+
 
 ## Installation
 
