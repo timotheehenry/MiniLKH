@@ -61,7 +61,9 @@ LKH.solve_tsp(distmat, MOVE_TYPE=2, log="on")
 ## Current status
 
 [x] 2-opt
+
 [ ] 3-opt
+
 [ ] Anything else
 
 
